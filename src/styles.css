@@ -1,0 +1,32 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background: lightskyblue;
+}
+.Link {
+  color: black;
+}
+.Background {
+  font-family: sans-serif;
+  justify-content: flex-end;
+  color: black;
+  margin: auto;
+  max-width: 1390px;
+  background-color: lightskyblue
+}
+html {
+  background: lightskyblue;
+}
+.Menu {
+  list-style: none;
+  margin: 500;
+  padding: 0;
+  overflow: hidden;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1em 1.5em;
+  color: black
+}
+.Center {
+  text-align: center
+}
