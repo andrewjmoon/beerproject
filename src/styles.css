@@ -6,15 +6,19 @@
 .Link {
   color: black;
 }
+.Link3 {
+  color: black;
+  text-decoration: underline;
+}
 .Background {
   font-family: sans-serif;
-  justify-content: right;
+  justify-content: flex-end;
   color: black;
   margin: auto;
   max-width: 1500px;
   background-color: lightskyblue;
-  display: block;
-  text-align: right;
+  text-align: center;
+  list-style: none;
 }
 html {
   background: lightskyblue;
@@ -31,4 +35,18 @@ html {
 }
 .Center {
   text-align: center;
+}
+.Review {
+  font-family: sans-serif;
+  justify-content: flex-end;
+  color: black;
+  margin: auto;
+  max-width: 1390px;
+  background-color: lightskyblue;
+}
+.Link2 {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  list-style-type: none;
 }

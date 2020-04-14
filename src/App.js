@@ -4,8 +4,7 @@ import { BrowserRouter as Router, Switch } from 'react-router-dom';
 import Brewery from './components/Brewery';
 import SearchBrewery from './components/SearchBrewery';
 import Home from './components/Home';
-import Paperbase from './components/Paperbase';
-import Nav from './components/Nav';
+import Header from './components/Header';
 import SearchBeer from './components/SearchBeer';
 import About from './components/About';
 import Resources from './components/Resources';
@@ -44,7 +43,7 @@ function App() {
     <div>
       <Router>
         <header>
-          <Paperbase />
+          <Header />
         </header>
         <Switch>
           <PrivateRoute path="/" exact component={Home} />

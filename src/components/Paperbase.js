@@ -1,3 +1,4 @@
+/*
 import React from 'react';
 //import PropTypes from "prop-types";
 import {
@@ -54,7 +55,7 @@ theme = {
     },
     MuiTabs: {
       root: {
-        marginLeft: theme.spacing.unit,
+        marginLeft: theme.spacing(1),
       },
       indicator: {
         height: 3,
@@ -81,7 +82,7 @@ theme = {
     },
     MuiIconButton: {
       root: {
-        padding: theme.spacing.unit,
+        padding: theme.spacing(1),
       },
     },
     MuiTooltip: {
@@ -156,7 +157,7 @@ const styles = {
 
 class Paperbase extends React.Component {
   state = {
-    mobileOpen: false,
+    mobileOpen: true,
   };
 
   handleDrawerToggle = () => {
@@ -171,17 +172,14 @@ class Paperbase extends React.Component {
         <div className={classes.root}>
           <CssBaseline />
           <nav className={classes.drawer}>
-            <Hidden smUp implementation="js">
-              <Navigator
-                PaperProps={{ style: { width: drawerWidth } }}
-                variant="temporary"
-                open={this.state.mobileOpen}
-                onClose={this.handleDrawerToggle}
-              />
-            </Hidden>
-            <Hidden xsDown implementation="css">
-              <Navigator PaperProps={{ style: { width: drawerWidth } }} />
-            </Hidden>
+            <Navigator
+              PaperProps={{ style: { width: drawerWidth } }}
+              variant="temporary"
+              open={this.state.mobileOpen}
+              onClose={this.handleDrawerToggle}
+            />
+
+            <Navigator PaperProps={{ style: { width: drawerWidth } }} />
           </nav>
           <div className={classes.appContent}>
             <Header onDrawerToggle={this.handleDrawerToggle} />
@@ -193,3 +191,4 @@ class Paperbase extends React.Component {
 }
 
 export default withStyles(styles)(Paperbase);
+*/

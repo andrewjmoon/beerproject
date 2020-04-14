@@ -2,10 +2,10 @@ import React from 'react';
 
 export default () => {
   return (
-    <div className="Background">
+    <div className="App">
       <h1>Resources for beer enthusiats</h1>
       <ul>
-        <li>
+        <li className="Link2">
           A map of Texas breweries by the Texas Craftbrewers Guild
           <a
             href="https://www.texascraftbrewersguild.org/map"
@@ -17,7 +17,7 @@ export default () => {
             Texas Brewery Map
           </a>
         </li>
-        <li>
+        <li className="Link2">
           Texas craftsbeer overview
           <a
             href="https://bigworldsmallgirl.com/best-texas-craft-beers/"
@@ -29,7 +29,7 @@ export default () => {
             https://bigworldsmallgirl.com/best-texas-craft-beers/
           </a>
         </li>
-        <li>
+        <li className="Link2">
           250 Top Ranked Beers
           <a
             href="https://www.beeradvocate.com/beer/top-rated/"
