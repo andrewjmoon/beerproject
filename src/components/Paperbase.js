@@ -156,7 +156,7 @@ const styles = {
 
 class Paperbase extends React.Component {
   state = {
-    mobileOpen: true,
+    mobileOpen: false,
   };
 
   handleDrawerToggle = () => {
