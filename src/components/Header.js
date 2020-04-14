@@ -19,15 +19,15 @@ import { useAuth0 } from '../react-auth0-wrapper';
 
 const lightColor = 'rgba(255, 255, 255, 0.7)';
 
-const styles = theme => ({
+const styles = (theme) => ({
   secondaryBar: {
-    zIndex: 0
+    zIndex: 0,
   },
   menuButton: {
-    marginLeft: -theme.spacing.unit
+    marginLeft: -theme.spacing.unit,
   },
   iconButtonAvatar: {
-    padding: 4
+    padding: 4,
   },
   link: {
     textDecoration: 'none',
@@ -35,14 +35,14 @@ const styles = theme => ({
     overflow: 'hidden',
     color: lightColor,
     '&:hover': {
-      color: theme.palette.common.white
-    }
+      color: theme.palette.common.white,
+    },
   },
   button: {
     borderColor: lightColor,
     lineSpacing: 1,
-    color: 'black'
-  }
+    color: 'black',
+  },
 });
 
 function Header(props) {
@@ -58,18 +58,7 @@ function Header(props) {
       >
         <Toolbar>
           <Grid container spacing={8} alignItems="center">
-            <Hidden smUp>
-              <Grid item>
-                <IconButton
-                  color="inherit"
-                  aria-label="Open drawer"
-                  onClick={onDrawerToggle}
-                  className={classes.menuButton}
-                >
-                  <MenuIcon />
-                </IconButton>
-              </Grid>
-            </Hidden>
+            <Hidden smUp></Hidden>
             <Grid item xs />
             <Grid item>
               {!isAuthenticated && (
@@ -79,6 +68,16 @@ function Header(props) {
               {isAuthenticated && (
                 <Button onClick={() => logout()}>Log out</Button>
               )}
+            </Grid>
+            <Grid item>
+              <IconButton
+                color="inherit"
+                aria-label="Open drawer"
+                onClick={onDrawerToggle}
+                className={classes.menuButton}
+              >
+                <MenuIcon />
+              </IconButton>
             </Grid>
           </Grid>
         </Toolbar>

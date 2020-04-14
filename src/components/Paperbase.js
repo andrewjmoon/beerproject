@@ -3,7 +3,7 @@ import React from 'react';
 import {
   MuiThemeProvider,
   createMuiTheme,
-  withStyles
+  withStyles,
 } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Hidden from '@material-ui/core/Hidden';
@@ -18,19 +18,19 @@ let theme = createMuiTheme({
     h5: {
       fontWeight: 500,
       fontSize: 26,
-      letterSpacing: 0.5
-    }
+      letterSpacing: 0.5,
+    },
   },
   palette: {
     primary: {
       light: '#63ccff',
       main: '#009be5',
-      dark: '#006db3'
-    }
+      dark: '#006db3',
+    },
   },
   shape: {
-    borderRadius: 8
-  }
+    borderRadius: 8,
+  },
 });
 
 theme = {
@@ -38,30 +38,30 @@ theme = {
   overrides: {
     MuiDrawer: {
       paper: {
-        backgroundColor: '#18202c'
-      }
+        backgroundColor: '#18202c',
+      },
     },
     MuiButton: {
       label: {
-        textTransform: 'initial'
+        textTransform: 'initial',
       },
       contained: {
         boxShadow: 'none',
         '&:active': {
-          boxShadow: 'none'
-        }
-      }
+          boxShadow: 'none',
+        },
+      },
     },
     MuiTabs: {
       root: {
-        marginLeft: theme.spacing.unit
+        marginLeft: theme.spacing.unit,
       },
       indicator: {
         height: 3,
         borderTopLeftRadius: 3,
         borderTopRightRadius: 3,
-        backgroundColor: theme.palette.common.white
-      }
+        backgroundColor: theme.palette.common.white,
+      },
     },
     MuiTab: {
       root: {
@@ -69,63 +69,63 @@ theme = {
         margin: '0 16px',
         minWidth: 0,
         [theme.breakpoints.up('md')]: {
-          minWidth: 0
-        }
+          minWidth: 0,
+        },
       },
       labelContainer: {
         padding: 0,
         [theme.breakpoints.up('md')]: {
-          padding: 0
-        }
-      }
+          padding: 0,
+        },
+      },
     },
     MuiIconButton: {
       root: {
-        padding: theme.spacing.unit
-      }
+        padding: theme.spacing.unit,
+      },
     },
     MuiTooltip: {
       tooltip: {
-        borderRadius: 4
-      }
+        borderRadius: 4,
+      },
     },
     MuiDivider: {
       root: {
-        backgroundColor: '#404854'
-      }
+        backgroundColor: '#404854',
+      },
     },
     MuiListItemText: {
       primary: {
-        fontWeight: theme.typography.fontWeightMedium
-      }
+        fontWeight: theme.typography.fontWeightMedium,
+      },
     },
     MuiListItemIcon: {
       root: {
         color: 'inherit',
         marginRight: 0,
         '& svg': {
-          fontSize: 20
-        }
-      }
+          fontSize: 20,
+        },
+      },
     },
     MuiAvatar: {
       root: {
         width: 32,
-        height: 32
-      }
-    }
+        height: 32,
+      },
+    },
   },
   props: {
     MuiTab: {
-      disableRipple: true
-    }
+      disableRipple: true,
+    },
   },
   mixins: {
     ...theme.mixins,
     toolbar: {
-      minHeight: 48
-    }
-  }
+      minHeight: 48,
+    },
+  },
 };
 
 const drawerWidth = 256;
@@ -133,34 +133,34 @@ const drawerWidth = 256;
 const styles = {
   root: {
     display: 'flex',
-    minHeight: '10vh'
+    minHeight: '10vh',
   },
   drawer: {
     [theme.breakpoints.up('sm')]: {
       width: drawerWidth,
-      flexShrink: 0
-    }
+      flexShrink: 0,
+    },
   },
   appContent: {
     flex: 1,
     display: 'flex',
     flexDirection: 'column',
-    backgroundColor: 'lightskyblue'
+    backgroundColor: 'lightskyblue',
   },
   mainContent: {
     flex: 1,
     padding: '48px 36px 0',
-    backgroundColor: 'lightskyblue'
-  }
+    backgroundColor: 'lightskyblue',
+  },
 };
 
 class Paperbase extends React.Component {
   state = {
-    mobileOpen: false
+    mobileOpen: true,
   };
 
   handleDrawerToggle = () => {
-    this.setState(state => ({ mobileOpen: !state.mobileOpen }));
+    this.setState((state) => ({ mobileOpen: !state.mobileOpen }));
   };
 
   render() {
