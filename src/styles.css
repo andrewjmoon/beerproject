@@ -14,6 +14,7 @@
   max-width: 1500px;
   background-color: lightskyblue;
   display: block;
+  text-align: right;
 }
 html {
   background: lightskyblue;
